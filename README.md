@@ -17,7 +17,7 @@ This project uses publicly available data to investigate a more uncomfortable qu
 
 ## Description
 
-Public healthcare systems are built on a promise: that government spending will deliver accessible, equitable care to those who need it most. Yet the loudest voices in the healthcare debate almost always focus on the headline number — how much is spent — while avoiding the harder question of where that money actually goes, and whose health it actually improves.
+Public healthcare systems are built on a promise: that government spending will deliver accessible, equitable care to those who need it most. Yet the loudest voices in the healthcare debate almost always focus on the headline number - how much is spent - while avoiding the harder question of where that money actually goes, and whose health it actually improves.
 
 This project investigates that gap.
 
@@ -25,7 +25,7 @@ Using publicly available data from the US Centers for Medicare and Medicaid Serv
 
 The United States spends more per capita on healthcare than any country on earth, yet ranks poorly on life expectancy, preventable mortality, and equitable access. The United Kingdom operates one of the world's oldest universal healthcare systems, yet outcomes vary dramatically by postcode, socioeconomic status, and ethnicity. Both governments spend billions annually on programmes designed to close those gaps. The data suggests those gaps persist regardless.
 
-This is not a project about whether universal healthcare is good or bad. It is a project about efficiency, accountability, and access — about following the money and asking whether it reaches the patient. It examines fraud and improper payments within Medicare and Medicaid, geographic and demographic disparities in outcomes within both systems, and what international comparisons reveal about the relationship between spending and population health.
+This is not a project about whether universal healthcare is good or bad. It is a project about efficiency, accountability, and access - about following the money and asking whether it reaches the patient. It examines fraud and improper payments within Medicare and Medicaid, geographic and demographic disparities in outcomes within both systems, and what international comparisons reveal about the relationship between spending and population health.
 
 The analysis is data-driven and deliberately non-partisan. The goal is not to confirm any political position but to surface what the numbers actually show — and to ask why the public conversation so rarely engages with them.
 
@@ -33,7 +33,7 @@ The analysis is data-driven and deliberately non-partisan. The goal is not to co
 
 ## Why This Matters
 
-Healthcare is unlike almost any other area of government spending. Everyone needs it. The accessibility question is therefore not an abstract policy debate — it is a direct measure of whether a government's stated commitment to public welfare translates into reality.
+Healthcare is unlike almost any other area of government spending. Everyone needs it. The accessibility question is therefore not an abstract policy debate - it is a direct measure of whether a government's stated commitment to public welfare translates into reality.
 
 Spending figures alone tell us very little. A system can spend vast sums while simultaneously failing its most vulnerable populations through fraud, structural inequality, geographic disparity, or administrative inefficiency. The data, rather than the political narrative, is where the real picture lives.
 
@@ -111,8 +111,8 @@ healthcare-spending-outcomes/
 
 ## About
 
-Built by Anastasia Koberman — International Relations and Spanish graduate, University of Exeter, with Russian and Spanish language capabilities and a background in geopolitical data analysis. The intersection of policy, data, and international comparison sits at the core of this work.
+Built by Anastasia Koberman - International Relations and Spanish graduate, University of Exeter, with Russian and Spanish language capabilities and a background in geopolitical data analysis. The intersection of policy, data, and international comparison sits at the core of this work.
 
 ---
 
-*Data sources are publicly available. All analysis and interpretation is original. This project does not advocate for any specific political position — the data speaks for itself.*
+*Data sources are publicly available. All analysis and interpretation is original. This project does not advocate for any specific political position - the data speaks for itself.*
