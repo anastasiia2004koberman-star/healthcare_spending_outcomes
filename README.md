@@ -1,13 +1,13 @@
 # Who Actually Benefits From Government Healthcare Spending?
 ### A Data Analysis of the US and UK Healthcare Systems
 
-**Status: Analysis in progress — updated regularly**
+**Status: Analysis in progress - updated regularly**
 
 ---
 
 ## The Question
 
-Governments on both sides of the Atlantic spend enormous sums on public healthcare. The United States spends more per capita on healthcare than any other nation on earth. The United Kingdom has operated a universally accessible public health system for over 75 years. Both systems are held up — and torn down — as models in the global healthcare debate.
+Governments on both sides of the Atlantic spend enormous sums on public healthcare. The United States spends more per capita on healthcare than any other nation on earth. The United Kingdom has operated a universally accessible public health system for over 75 years. Both systems are held up - and torn down - as models in the global healthcare debate.
 
 But the dominant public discourse almost always asks the wrong question. The debate is framed as *how much* governments spend, rather than *who that spending actually reaches.*
 
@@ -111,7 +111,7 @@ healthcare-spending-outcomes/
 
 ## About
 
-Built by Anastasia Koberman - International Relations and Spanish graduate, University of Exeter, with Russian and Spanish language capabilities and a background in geopolitical data analysis. The intersection of policy, data, and international comparison sits at the core of this work.
+Built by Anastasia Koberman - International Relations and Spanish graduate, University of Exeter, with a background in geopolitical data analysis. The intersection of policy, data, and international comparison sits at the core of this work.
 
 ---
 
