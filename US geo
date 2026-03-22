@@ -1,0 +1,103 @@
+import requests
+import pandas as pd
+import json
+
+def pull_cms_dataset(dataset_id, limit=100, offset=0):
+    """Pull data from a specific CMS dataset"""
+    url = f"https://data.cms.gov/data-api/v1/dataset/{dataset_id}/data"
+    params = {
+        'size': limit,
+        'offset': offset
+    }
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data: {e}")
+        return None
+
+def explore_dataset(data):
+    """Explore the structure and contents of a dataset"""
+    if not data:
+        print("No data returned")
+        return None
+
+    df = pd.DataFrame(data)
+
+    print("\n--- DATASET OVERVIEW ---")
+    print(f"Rows returned: {len(df)}")
+    print(f"Number of columns: {len(df.columns)}")
+
+    print("\n--- COLUMN NAMES ---")
+    for col in df.columns:
+        print(f"  {col}")
+
+    print("\n--- SAMPLE RECORD ---")
+    print(json.dumps(data[0], indent=2))
+
+    print("\n--- DATA TYPES ---")
+    print(df.dtypes)
+
+    print("\n--- FIRST 5 ROWS ---")
+    print(df.head())
+
+    return df
+
+def check_missing_values(df):
+    """Check for missing values in the dataset"""
+    print("\n--- MISSING VALUES ---")
+    missing = df.isnull().sum()
+    missing_pct = (missing / len(df)) * 100
+    missing_df = pd.DataFrame({
+        'Missing Count': missing,
+        'Missing %': missing_pct.round(2)
+    })
+    print(missing_df[missing_df['Missing Count'] > 0])
+
+def get_unique_states(df):
+    """Get list of unique states in the dataset"""
+    state_col = None
+    for col in df.columns:
+        if 'state' in col.lower():
+            state_col = col
+            break
+
+    if state_col:
+        print(f"\n--- UNIQUE STATES (column: {state_col}) ---")
+        print(sorted(df[state_col].unique()))
+    else:
+        print("\nNo state column found")
+
+if __name__ == "__main__":
+    print("=" * 50)
+    print("CMS Market Saturation & Utilization Data")
+    print("State-County Level Analysis")
+    print("=" * 50)
+
+    # Dataset ID for Market Saturation & Utilization State-County
+    DATASET_ID = "8900b9c5-50b7-43de-9bdd-0d7113a8355e"
+
+    # Pull initial sample
+    print("\nPulling sample of 100 records...")
+    data = pull_cms_dataset(DATASET_ID, limit=100)
+
+    if data:
+        print(f"Successfully pulled {len(data)} records")
+
+        # Explore the dataset structure
+        df = explore_dataset(data)
+
+        if df is not None:
+            # Check for missing values
+            check_missing_values(df)
+
+            # Get unique states
+            get_unique_states(df)
+
+            # Save sample to CSV for further exploration
+            df.to_csv('market_saturation_sample.csv', index=False)
+            print("\nSample saved to market_saturation_sample.csv")
+    else:
+        print("Failed to retrieve data")
+        
